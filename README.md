@@ -22,7 +22,7 @@ The API provides CRUD functionality for managing users and includes input valida
 
 * C#
 * ASP.NET Core
-* .NET 8
+* .NET 10
 * REST API
 * Swagger
 * Microsoft Copilot
