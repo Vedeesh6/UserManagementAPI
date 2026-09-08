@@ -1,6 +1,48 @@
-@UserManagementAPI_HostAddress = http://localhost:5214
+@UserManagementAPI_HostAddress = http://localhost:5000
+@Token = techhive-secret-token
 
-GET {{UserManagementAPI_HostAddress}}/weatherforecast/
+### Get all users
+GET {{UserManagementAPI_HostAddress}}/api/Users
+Authorization: Bearer {{Token}}
 Accept: application/json
+
+###
+
+### Get user by ID
+GET {{UserManagementAPI_HostAddress}}/api/Users/1
+Authorization: Bearer {{Token}}
+Accept: application/json
+
+###
+
+### Create user
+POST {{UserManagementAPI_HostAddress}}/api/Users
+Authorization: Bearer {{Token}}
+Content-Type: application/json
+
+{
+  "name": "Charlie Brown",
+  "email": "charlie@example.com",
+  "department": "Finance"
+}
+
+###
+
+### Update user
+PUT {{UserManagementAPI_HostAddress}}/api/Users/1
+Authorization: Bearer {{Token}}
+Content-Type: application/json
+
+{
+  "name": "Alice Williams",
+  "email": "alice.williams@example.com",
+  "department": "IT"
+}
+
+###
+
+### Delete user
+DELETE {{UserManagementAPI_HostAddress}}/api/Users/1
+Authorization: Bearer {{Token}}
 
 ###
