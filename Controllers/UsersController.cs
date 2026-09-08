@@ -13,14 +13,14 @@ new User
 {
 Id = 1,
 Name = "Alice Johnson",
-Email = "[alice@example.com](mailto:alice@example.com)",
+Email = "alice@example.com",
 Department = "HR"
 },
 new User
 {
 Id = 2,
 Name = "Bob Smith",
-Email = "[bob@example.com](mailto:bob@example.com)",
+Email = "bob@example.com",
 Department = "IT"
 }
 };
